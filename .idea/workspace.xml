@@ -6,27 +6,20 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68f1c593-31ea-4c9c-a073-eef1c03a94fc" name="默认更改列表" comment="" />
+    <list default="true" id="68f1c593-31ea-4c9c-a073-eef1c03a94fc" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cv-2020" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bnhO4G3DcNOLCIhpCD3G7thlZU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,7 +55,10 @@
       <workItem from="1589277498640" duration="2832000" />
       <workItem from="1589283435933" duration="180000" />
       <workItem from="1589283841664" duration="3118000" />
-      <workItem from="1589287147999" duration="4825000" />
+      <workItem from="1589287147999" duration="5337000" />
+      <workItem from="1589293389696" duration="209000" />
+      <workItem from="1589358462182" duration="16000" />
+      <workItem from="1589363035698" duration="44000" />
     </task>
     <servers />
   </component>
@@ -82,6 +78,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="807" y="472" key="Github.ShareDialog" timestamp="1589292052629">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="807" y="472" key="Github.ShareDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589292052629" />
+    <state x="768" y="195" key="Github.UntrackedFilesDialog" timestamp="1589292058111">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="768" y="195" key="Github.UntrackedFilesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589292058111" />
     <state width="998" height="171" key="GridCell.Tab.0.bottom" timestamp="1589281727152">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
