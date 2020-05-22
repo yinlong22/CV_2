@@ -66,7 +66,8 @@
       <workItem from="1589508065983" duration="1469000" />
       <workItem from="1589528199613" duration="928000" />
       <workItem from="1590046752850" duration="1000" />
-      <workItem from="1590046760538" duration="3628000" />
+      <workItem from="1590046760538" duration="3994000" />
+      <workItem from="1590114266386" duration="2549000" />
     </task>
     <task id="LOCAL-00001" summary="ONESLIDE使用教程">
       <created>1589379879227</created>
@@ -117,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590049176467</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="更改简历">
+      <created>1590050615550</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590050615550</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,9 +177,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="725" y="287" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1589277231532" />
-    <state x="831" y="329" key="Vcs.Push.Dialog.v2" timestamp="1590049178074">
+    <state x="831" y="329" key="Vcs.Push.Dialog.v2" timestamp="1590050616918">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="831" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1590049178074" />
+    <state x="831" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1590050616918" />
   </component>
 </project>
