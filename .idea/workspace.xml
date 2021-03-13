@@ -13,6 +13,7 @@
     <list default="true" id="68f1c593-31ea-4c9c-a073-eef1c03a94fc" name="默认更改列表" comment="更改简历">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/images/头像.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/头像.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,16 @@
       <recent name="E:\Desktop\workplace\CV_2\src\images" />
       <recent name="E:\Desktop\workplace\CV_2\cv-2020\src\images" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/CV_2/src/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -80,7 +91,10 @@
       <workItem from="1590945714877" duration="90000" />
       <workItem from="1590947201942" duration="2333000" />
       <workItem from="1590949757033" duration="31000" />
-      <workItem from="1602426391052" duration="162000" />
+      <workItem from="1602426391052" duration="488000" />
+      <workItem from="1602427216843" duration="180000" />
+      <workItem from="1614674852338" duration="45000" />
+      <workItem from="1615624202999" duration="5480000" />
     </task>
     <task id="LOCAL-00001" summary="ONESLIDE使用教程">
       <created>1589379879227</created>
@@ -173,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590949510081</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="更改简历">
+      <created>1602426787368</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602426787368</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,9 +218,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="更改简历" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="529" y="176" key="SettingsEditor" timestamp="1602426552257">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="2726" y="360" key="#Notifications" timestamp="1614674875404">
+      <screen x="1920" y="30" width="1920" height="1050" />
     </state>
-    <state x="529" y="176" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1602426552257" />
+    <state x="2726" y="360" key="#Notifications/1920.30.1920.1050/0.30.1920.1050@1920.30.1920.1050" timestamp="1614674875404" />
+    <state x="2536" y="258" key="run.anything.popup" timestamp="1615627000035">
+      <screen x="1920" y="30" width="1920" height="1050" />
+    </state>
+    <state x="2536" y="258" key="run.anything.popup/1920.30.1920.1050/0.30.1920.1050@1920.30.1920.1050" timestamp="1615627000035" />
+    <state x="2543" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1615629171186">
+      <screen x="1920" y="30" width="1920" height="1050" />
+    </state>
+    <state x="2543" y="257" width="672" height="678" key="search.everywhere.popup/1920.30.1920.1050/0.30.1920.1050@1920.30.1920.1050" timestamp="1615629171186" />
   </component>
 </project>
