@@ -12,8 +12,9 @@
   <component name="ChangeListManager">
     <list default="true" id="68f1c593-31ea-4c9c-a073-eef1c03a94fc" name="默认更改列表" comment="更改简历">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/头像.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/头像.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../oneslide" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -47,12 +49,8 @@
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/CV_2/src/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-      </list>
-    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -95,6 +93,7 @@
       <workItem from="1602427216843" duration="180000" />
       <workItem from="1614674852338" duration="45000" />
       <workItem from="1615624202999" duration="5480000" />
+      <workItem from="1640048518316" duration="1882000" />
     </task>
     <task id="LOCAL-00001" summary="ONESLIDE使用教程">
       <created>1589379879227</created>
@@ -198,7 +197,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -216,19 +215,5 @@
     <MESSAGE value="ONESLIDE使用教程" />
     <MESSAGE value="更改简历" />
     <option name="LAST_COMMIT_MESSAGE" value="更改简历" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2726" y="360" key="#Notifications" timestamp="1614674875404">
-      <screen x="1920" y="30" width="1920" height="1050" />
-    </state>
-    <state x="2726" y="360" key="#Notifications/1920.30.1920.1050/0.30.1920.1050@1920.30.1920.1050" timestamp="1614674875404" />
-    <state x="2536" y="258" key="run.anything.popup" timestamp="1615627000035">
-      <screen x="1920" y="30" width="1920" height="1050" />
-    </state>
-    <state x="2536" y="258" key="run.anything.popup/1920.30.1920.1050/0.30.1920.1050@1920.30.1920.1050" timestamp="1615627000035" />
-    <state x="2543" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1615629171186">
-      <screen x="1920" y="30" width="1920" height="1050" />
-    </state>
-    <state x="2543" y="257" width="672" height="678" key="search.everywhere.popup/1920.30.1920.1050/0.30.1920.1050@1920.30.1920.1050" timestamp="1615629171186" />
   </component>
 </project>
