@@ -10,7 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68f1c593-31ea-4c9c-a073-eef1c03a94fc" name="默认更改列表" comment="更改简历" />
+    <list default="true" id="68f1c593-31ea-4c9c-a073-eef1c03a94fc" name="默认更改列表" comment="更改简历">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,6 +105,8 @@
       <workItem from="1640513751262" duration="2000" />
       <workItem from="1640931571284" duration="1000" />
       <workItem from="1640999956288" duration="1248000" />
+      <workItem from="1648824251885" duration="2000" />
+      <workItem from="1648824260964" duration="1707000" />
     </task>
     <task id="LOCAL-00001" summary="ONESLIDE使用教程">
       <created>1589379879227</created>
