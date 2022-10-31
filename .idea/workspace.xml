@@ -109,7 +109,7 @@
       <workItem from="1648824260964" duration="2552000" />
       <workItem from="1658736257767" duration="1219000" />
       <workItem from="1658937699836" duration="1343000" />
-      <workItem from="1663345126393" duration="322000" />
+      <workItem from="1663345126393" duration="1672000" />
     </task>
     <task id="LOCAL-00001" summary="ONESLIDE使用教程">
       <created>1589379879227</created>
@@ -258,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658938901623</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="更改简历">
+      <created>1663345458842</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1663345458842</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
