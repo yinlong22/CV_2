@@ -12,8 +12,9 @@
         }
 
         body {
-            background: #eee;
+            background: #f5f5f5;
             margin: 20px 0;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
         }
 
         article {
@@ -22,66 +23,61 @@
             background: white;
             margin: 0 auto;
             overflow: auto;
-            padding: 1em;
-        }
-    </style>
-    <style media="print">
-        body {
-            margin: 0;
-        }
-
-    </style>
-    <style>
-        body {
+            padding: 2em;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
 
         p {
             margin: .3em 0;
+            line-height: 1.5;
         }
 
         h1 {
-            font-size: 25px;
+            font-size: 28px;
             margin-top: 0;
+            color: #333;
         }
 
-        h4,
-        h5,
-        h6 {
+        h2 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 6px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        h4, h5, h6 {
             font-weight: normal;
         }
 
-        ol,
-        ul {
+        ol, ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
 
         strong {
-            font-weight: normal;
+            font-weight: bold;
             color: #f60;
         }
 
         a {
-            color: #999;
+            color: #1890ff;
             text-decoration: none;
             border-bottom: 1px solid;
+            transition: color 0.3s;
         }
 
-        p,
-        li {
+        a:hover {
+            color: #40a9ff;
+        }
+
+        p, li {
             color: #666;
         }
 
-        strong {
-            font-weight: normal;
-        }
-
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin: 0;
+        section {
+            margin-bottom: 20px;
         }
 
         .bio {
@@ -92,120 +88,33 @@
             position: absolute;
             top: 0;
             right: 0;
-        }
-    </style>
-
-    <style>
-        .projects {
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
         }
 
-        .projects p {
-            color: #666;
+        /* 项目样式 */
+        .jobs ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
         }
 
-        .projects strong {
-            color: #f60;
+        .jobs li {
+            background: #fafafa;
+            border-radius: 5px;
+            padding: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
         }
 
-        .projects > ol {
-            margin-top: 0;
-            list-style-position: inside;
-            padding: 0;
-        }
-
-        .projects > ol > li {
-            margin-bottom: 24px;
-        }
-
-        .projects > ol > li > header {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .projects > ol > li h3 {
-            display: inline-block;
-        }
-    </style>
-    <style>
-        .skills {
-        }
-
-        #skills {
-
-            width: 500px;
-            height: 270px;
-        }
-
-        .skills > .wrapper {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .skills > .wrapper > :first-child {
-            margin-right: 24px;
-        }
-
-        .skills > .wrapper > #skills {
-        }
-
-        .skills > .wrapper > ul {
-            color: #666;
-        }
-
-        .skills > .wrapper strong {
-            color: #f60;
-        }
-
-        .skills > .wrapper > ul > li {
-            line-height: 1.2;
-            margin-bottom: 8px;
-        }
-    </style>
-    <style>
-        .openSource {
-        }
-
-        .openSource > h2 {
-        }
-
-        .openSource header img {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-        .openSource > ul {
-        }
-
-        .openSource > ul > li {
-            margin-bottom: 24px;
-        }
-
-        .openSource header {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .openSource h3 {
-        }
-    </style>
-    <style>
-        .jobs {
-        }
-
-        .jobs > h2 {
-        }
-
-        .jobs > ol {
-        }
-
-        .jobs > ol > li {
-            margin: 12px 0;
+        .jobs li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
         }
 
         .jobs header {
             display: flex;
+            flex-direction: column;
             color: #666;
             margin-bottom: 12px;
         }
@@ -213,29 +122,78 @@
         .jobs header > h3 {
             font-size: 18px;
             color: #333;
-        }
-
-        .jobs header > h4 {
-            margin-left: 1em;
-            font-size: 18px;
+            margin: 0 0 5px 0;
         }
 
         .jobs header > span {
-            font-size: 18px;
-            margin-left: auto;
+            font-size: 14px;
+            margin: 5px 0;
         }
-    </style>
 
+        /* 技能样式 */
+        .skills .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
 
-    <style>
+        .skills .wrapper > :first-child {
+            margin-right: 24px;
+            flex: 1;
+        }
+
+        #skills {
+            width: 500px;
+            height: 270px;
+        }
+
+        .skills .wrapper ul {
+            color: #666;
+        }
+
+        .skills .wrapper ul li {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* 其他链接样式 */
+        .others ul li {
+            line-height: 1.8;
+        }
+
+        .others a {
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        /* 教育经历样式 */
+        .education p {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .education span {
+            min-width: 180px;
+            color: #888;
+        }
+
+        .education time {
+            font-style: normal;
+        }
+
+        /* 响应式设计 */
         @media (max-width: 500px) {
             body {
                 margin: 0;
             }
 
             article {
-                width: auto;
+                width: 100%;
                 height: auto;
+                padding: 1em;
+                box-shadow: none;
+                border-radius: 0;
             }
 
             .bio img {
@@ -247,17 +205,21 @@
             }
 
             #skills {
-                width: auto;
+                width: 100%;
+                height: 250px;
             }
 
-            .jobs header {
+            .jobs ul {
+                grid-template-columns: 1fr;
+            }
+
+            .education p {
                 flex-direction: column;
+                align-items: flex-start;
             }
 
-            .jobs header > h3,
-            .jobs header > h4,
-            .jobs header > span {
-                margin: 0;
+            .education span {
+                margin-bottom: 5px;
             }
         }
     </style>
@@ -276,6 +238,7 @@
                 href="mailto:342241857@qq.com">342241857@qq.com</a>
         </p>
     </section>
+    
     <section class="skills">
         <h2>简介</h2>
         <div class="wrapper">
@@ -290,6 +253,7 @@
                     <strong>常常会在团队中做调整整体技术框架和处理比较复杂困难的需求</strong>
                     ：手写excel、聊天及弹幕、手写occ等。已助力多家企业：
                     <strong>双镜、jasper等，净利均润超千万</strong>。我在这里为您提供您想要的各端web、app产品体验和技术解决方案。
+                </li>
                 <li>
                     熟练掌握：<strong>vue、react、flutter、react native、electron、threejs、koa</strong>等。
                     <strong>技术栈较丰富，项目匹配性强</strong>，从电商到现在的web3/gpt等行业均有商业项目。
@@ -305,85 +269,92 @@
             </ul>
         </div>
     </section>
+    
     <section class="jobs">
         <h2>主要项目经历</h2>
         <ul>
-            <li class="page2">
-                <header>Jesper<span style="font-size: 14px;color: olive">头部ai国际网站项目：使用react、sse、occ
-                <br/>担任项目第一版得独立开发，季度盈利超千万</span>
-                    <span style="font-size: 16px">
-                          <a href="https://www.jasper.ai/free-trial?_from=ads&fp_sid=1-g-CjwKCAiA-bmsBhAGEiwAoaQNmq6czkkF8w_KdHov1LC5uCMw2qLN2QASGc5jLRbiyi-B1WX0mQNiQhoCN_IQAvD_BwE&gad_source=1">项目预览</a>
+            <li>
+                <header>
+                    <h3>Jesper</h3>
+                    <span style="color: olive">头部ai国际网站项目：使用react、sse、occ</span>
+                    <span>担任项目第一版得独立开发，季度盈利超千万</span>
+                    <span>
+                        <a href="https://www.jasper.ai/free-trial?_from=ads&fp_sid=1-g-CjwKCAiA-bmsBhAGEiwAoaQNmq6czkkF8w_KdHov1LC5uCMw2qLN2QASGc5jLRbiyi-B1WX0mQNiQhoCN_IQAvD_BwE&gad_source=1">项目预览</a>
                     </span>
                 </header>
             </li>
-            <li class="page2">
-                <header>speakguru<span style="font-size: 14px;color: olive">口语练习app项目：使用flutter
-                <br/>担任项目负责人及主要开发</span>
-                    <span style="font-size: 16px">
-                          <a href="https://speakguru.huoideas.com/#/">项目预览</a>
+            <li>
+                <header>
+                    <h3>SpeakGuru</h3>
+                    <span style="color: olive">口语练习app项目：使用flutter</span>
+                    <span>担任项目负责人及主要开发</span>
+                    <span>
+                        <a href="https://speakguru.huoideas.com/#/">项目预览</a> (iOS/安卓应用商店可下载)
                     </span>
                 </header>
             </li>
-            <li class="page2">
-                <header>双镜博物<span style="font-size: 14px;color: olive">元宇宙h5网站：使用react、umi、threejs、ant-mobile、nodejs、anyweb
-                <br/>担任项目主要开发工程师、搭建以及80%以上的页面和业务开发，曾一月获净利润上亿</span>
-                    <span style="font-size: 16px">
-                          <a href="https://2m.shuangjing.club">项目预览</a>
+            <li>
+                <header>
+                    <h3>双镜博物</h3>
+                    <span style="color: olive">元宇宙h5网站：使用react、umi、threejs、ant-mobile、nodejs、anyweb</span>
+                    <span>担任项目主要开发工程师、搭建以及80%以上的页面和业务开发，曾一月获净利润上亿</span>
+                    <span>
+                        <a href="https://2m.shuangjing.club">项目预览</a>
                     </span>
                 </header>
             </li>
-            <li class="page2">
-                <header>GAIA项目<span style="font-size: 14px;color: olive">类似b站的自适应视频网站： 使用vue、jq、element
-                </span>
-                    <span style="font-size: 16px">
-                       <a href="https://gaiamount.com/">项目预览</a></span>
-                </header>
-            </li>
-            <li class="page2">
-                <header>好好听课app<span style="font-size: 14px;color: olive">在线教育pc和移动端app：使用electron、react、im和ant
-                 </span>
-                    <span style="font-size: 16px">
-                        <span>因政策原因已下架</span>
+            <li>
+                <header>
+                    <h3>GAIA项目</h3>
+                    <span style="color: olive">类似b站的自适应视频网站： 使用vue、jq、element</span>
+                    <span>
+                       <a href="https://gaiamount.com/">项目预览</a>
                     </span>
                 </header>
             </li>
-            <li class="page2">
-                <header>书链及书加加app<span style="font-size: 14px;color: olive">图书和教学资源配套的app：使用react native
-                </span>
-                    <span style="font-size: 16px">
-                        <span>ios或安卓市场搜索名字即可</span>
-                    </span>
+            <li>
+                <header>
+                    <h3>好好听课app</h3>
+                    <span style="color: olive">在线教育pc和移动端app：使用electron、react、im和ant</span>
+                    <span>因政策原因已下架</span>
+                </header>
+            </li>
+            <li>
+                <header>
+                    <h3>书链及书加加app</h3>
+                    <span style="color: olive">图书和教学资源配套的app：使用react native</span>
+                    <span>ios或安卓市场搜索名字即可</span>
                 </header>
             </li>
         </ul>
     </section>
+    
     <section class="others">
         <h2>其他链接(均为4年前的项目)</h2>
         <ul>
             <li>部分开源项目:
-                <a href="https://yinlong22.github.io/muconey-1-website/"> <strong>MUCONEY记账</strong> </a> 、
-                <a href="https://github.com/yinlong22/mangosteen-ruby"> <strong>MUCONEY记账后端</strong> </a> 、
-                <a href="https://github.com/yinlong22/react-threeDemo"> <strong>threejs-3d地球</strong> </a> 、
-                <a href="https://www.shuliantong.cn/webappv2/supplyChainSystem/index.html"> <strong>erp网站项目</strong>
-                </a> 、
-                <a href=https://yinlong22.github.io/vue-blog/index#/"> <strong>多人博客</strong> </a> 、
-                <a href="https://yinlong22.github.io/oneSlide/#/"> <strong>制作ppt和展示的网站</strong> </a> 、
-                <a href="https://yinlong22.github.io/pikachu2/Pikachu.html"> <strong>会动的皮卡丘</strong> </a> 、
-                <a href="https://github.com/yinlong22/dom-fengzhuang"> <strong>封装DOM 库</strong> </a> 、
-                <a href="https://github.com/yinlong22/node_spider1"> <strong>node-acFun爬虫</strong> </a> 、
-                <a href="https://github.com/yinlong22/node-tasktodo-cli"> <strong>todoCli app</strong> </a> 、
-                <a href="https://github.com/yinlong22/node-text"> <strong>node服务端代码</strong> </a> 、
-                <a href="https://yinlong22.github.io/web_nav-2/src/index.html">前端导航网站 </a> 、
-                <a href="https://github.com/yinlong22/tomato_mini_program">番茄任务闹钟小程序 </a> 、
+                <a href="https://yinlong22.github.io/muconey-1-website/"><strong>MUCONEY记账</strong></a>、
+                <a href="https://github.com/yinlong22/mangosteen-ruby"><strong>MUCONEY记账后端</strong></a>、
+                <a href="https://github.com/yinlong22/react-threeDemo"><strong>threejs-3d地球</strong></a>、
+                <a href="https://www.shuliantong.cn/webappv2/supplyChainSystem/index.html"><strong>erp网站项目</strong></a>、
+                <a href="https://yinlong22.github.io/vue-blog/index#/"><strong>多人博客</strong></a>、
+                <a href="https://yinlong22.github.io/oneSlide/#/"><strong>制作ppt和展示的网站</strong></a>、
+                <a href="https://yinlong22.github.io/pikachu2/Pikachu.html"><strong>会动的皮卡丘</strong></a>、
+                <a href="https://github.com/yinlong22/dom-fengzhuang"><strong>封装DOM 库</strong></a>、
+                <a href="https://github.com/yinlong22/node_spider1"><strong>node-acFun爬虫</strong></a>、
+                <a href="https://github.com/yinlong22/node-tasktodo-cli"><strong>todoCli app</strong></a>、
+                <a href="https://github.com/yinlong22/node-text"><strong>node服务端代码</strong></a>、
+                <a href="https://yinlong22.github.io/web_nav-2/src/index.html">前端导航网站</a>、
+                <a href="https://github.com/yinlong22/tomato_mini_program">番茄任务闹钟小程序</a>、
                 ...
             </li>
-            <br/>
             <li>
                 <a href="https://juejin.im/user/5e5e59a6f265da575e37baac/posts">我的博客</a>
                 <a href="https://github.com/yinlong22">我的 GitHub</a>
             </li>
         </ul>
     </section>
+    
     <section class="education">
         <h2>教育经历及工作经历</h2>
         <p>
@@ -408,7 +379,7 @@
         </p>
     </section>
 </article>
-<!--<script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>-->
+<script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.9.0/echarts.min.js"></script>
 <script src="./main.js"></script>
 </body>
 </html>
