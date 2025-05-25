@@ -1,214 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
     <title>Yinlong Shi</title>
     <style>
-        * { box-sizing: border-box; }
-        body { background: #f5f5f5; margin: 20px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        article { width: 21cm; min-height: 29.7cm; background: white; margin: 0 auto; padding: 2em; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1, h2 { color: #333; }
-        h1 { font-size: 28px; margin-top: 0; }
-        h2 { font-size: 20px; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 25px; }
-        h4, h5, h6 { font-weight: normal; margin: 0; }
-        p { margin: .3em 0; color: #666; }
-        ul, ol { list-style: none; padding: 0; margin: 0; }
-        li { color: #666; margin-bottom: 8px; }
-        strong { font-weight: 500; color: #f60; }
-        a { color: #0366d6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        
-        .bio { position: relative; margin-bottom: 20px; }
-        .bio img { position: absolute; top: 0; right: 0; border-radius: 50%; }
-        
-        .tag { display: inline-block; background: #f1f8ff; color: #0366d6; padding: 2px 8px; border-radius: 12px; font-size: 12px; margin-right: 5px; margin-bottom: 5px; }
-        
-        .project-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #eee; }
-        .project-item:last-child { border-bottom: none; }
-        .project-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
-        .project-title { font-weight: 500; color: #333; font-size: 18px; }
-        .project-desc { color: #476582; font-size: 14px; margin-bottom: 8px; }
-        .project-link { font-size: 14px; }
-        .project-tags { margin-top: 5px; }
-        
-        .skills-wrapper { display: flex; justify-content: space-between; }
-        .skills-list { flex: 1; }
-        
-        .open-source { margin-top: 15px; }
-        .open-source a { margin-right: 10px; }
-        
-        .education-item { display: flex; margin-bottom: 10px; }
-        .education-date { min-width: 120px; color: #888; }
-        
-        @media (max-width: 600px) {
-            body { margin: 0; }
-            article { width: 100%; height: auto; padding: 1em; }
-            .bio img { width: 80px; }
-            .skills-wrapper { flex-direction: column; }
-            .project-header { flex-direction: column; }
-            .education-item { flex-direction: column; }
-            .education-date { margin-bottom: 5px; }
-        }
-    </style>
-</head>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #f5f5f5;
+        margin: 20px 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      article {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        padding: 2em;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      h1 {
+        font-size: 28px;
+        margin-top: 0;
+      }
+      h2 {
+        font-size: 20px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+        margin-top: 25px;
+      }
+      h4,
+      h5,
+      h6 {
+        font-weight: normal;
+        margin: 0;
+      }
+      p {
+        margin: 0.3em 0;
+        color: #666;
+      }
+      ul,
+      ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        color: #666;
+        margin-bottom: 8px;
+      }
+      strong {
+        font-weight: 500;
+        color: #f60;
+      }
+      a {
+        color: #0366d6;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
 
-<body>
-<article>
-    <section class="bio">
+      .bio {
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .bio img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+      }
+
+      .tag {
+        display: inline-block;
+        background: #f1f8ff;
+        color: #0366d6;
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-size: 12px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+
+      .project-item {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px dashed #eee;
+      }
+      .project-item:last-child {
+        border-bottom: none;
+      }
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+      .project-title {
+        font-weight: 500;
+        color: #333;
+        font-size: 18px;
+      }
+      .project-desc {
+        color: #476582;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+      .project-link {
+        font-size: 14px;
+      }
+      .project-tags {
+        margin-top: 5px;
+      }
+
+      .skills-wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+      .skills-list {
+        flex: 1;
+      }
+
+      .open-source {
+        margin-top: 15px;
+      }
+      .open-source a {
+        margin-right: 10px;
+      }
+
+      .education-item {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .education-date {
+        min-width: 120px;
+        color: #888;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          margin: 0;
+        }
+        article {
+          width: 100%;
+          height: auto;
+          padding: 1em;
+        }
+        .bio img {
+          width: 80px;
+        }
+        .skills-wrapper {
+          flex-direction: column;
+        }
+        .project-header {
+          flex-direction: column;
+        }
+        .education-item {
+          flex-direction: column;
+        }
+        .education-date {
+          margin-bottom: 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <section class="bio">
         <h1>Yinlong Shi</h1>
-        <img src="images/img.png" alt="Profile Photo" width="100px">
-        <p>Full-Stack Developer | Chengdu | <a href="tel:17695473336">17695473336</a> | <a href="mailto:yinlong342241@gmail.com">yinlong342241@gmail.com</a></p>
-    </section>
-    
-    <section class="skills">
+        <img src="images/img.png" alt="Profile Photo" width="100px" />
+        <p>
+          Full-Stack Developer | Chengdu |
+          <a href="tel:17695473336">17695473336</a> |
+          <a href="mailto:yinlong342241@gmail.com">yinlong342241@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="skills">
         <h2>Professional Summary</h2>
         <div class="skills-wrapper">
-            <div class="skills-list">
-                <p><strong>Passionate developer with 6+ years experience across 100+ projects</strong>. Expert in optimizing technical frameworks and solving complex challenges in e-commerce, Web3, and AI applications.</p>
-                
-                <p><span class="tag">#NoLimits</span> <span class="tag">#UserExperience</span> <span class="tag">#WebDevelopment</span> <span class="tag">#MobileDev</span> <span class="tag">#AI</span> <span class="tag">#Web3</span></p>
-                
-                <p><strong>Technical Skills:</strong> Vue, React, Flutter, React Native, Electron, Three.js, Koa</p>
-                
-                <p><strong>Leadership:</strong> Team management, project iteration, requirement advancement, and technical architecture optimization.</p>
-                
-                <p><strong>Achievement:</strong> Ranked #1 on <a href="https://www.yuanling.com/renwu/detail?id=30356486556809216&spm=1.2.47.29&scm=">Yuanling</a> with 100% positive reviews and 220k+ annual revenue.</p>
-            </div>
+          <div class="skills-list">
+            <p>
+              <strong
+                >Passionate developer with 6+ years experience across 100+
+                projects</strong
+              >. Expert in optimizing technical frameworks and solving complex
+              challenges in e-commerce, Web3, and AI applications.
+            </p>
+
+            <p>
+              <strong>Technical Skills:</strong> Vue, React, Flutter, React
+              Native, Electron, Three.js, Koa
+            </p>
+
+            <p>
+              <strong>Leadership:</strong> Team management, project iteration,
+              requirement advancement, and technical architecture optimization.
+            </p>
+
+            <p>
+              <strong>Achievement:</strong> Ranked #1 on
+              <a
+                href="https://www.yuanling.com/renwu/detail?id=30356486556809216&spm=1.2.47.29&scm="
+                >Yuanling</a
+              >
+              with 100% positive reviews and 220k+ annual revenue.
+            </p>
+          </div>
         </div>
-    </section>
-    
-    <section class="projects">
+      </section>
+
+      <section class="projects">
         <h2>Key Projects</h2>
         <div class="project-item">
-            <div class="project-header">
-                <div class="project-title">Jasper</div>
-                <div class="project-link"><a href="https://www.jasper.ai/free-trial?_from=ads&fp_sid=1-g-CjwKCAiA-bmsBhAGEiwAoaQNmq6czkkF8w_KdHov1LC5uCMw2qLN2QASGc5jLRbiyi-B1WX0mQNiQhoCN_IQAvD_BwE&gad_source=1">Project Preview</a></div>
+          <div class="project-header">
+            <div class="project-title">Jasper</div>
+            <div class="project-link">
+              <a
+                href="https://www.jasper.ai/free-trial?_from=ads&fp_sid=1-g-CjwKCAiA-bmsBhAGEiwAoaQNmq6czkkF8w_KdHov1LC5uCMw2qLN2QASGc5jLRbiyi-B1WX0mQNiQhoCN_IQAvD_BwE&gad_source=1"
+                >Project Preview</a
+              >
             </div>
-            <div class="project-desc">Leading AI content platform. Served as independent developer for first version, generating 10M+ quarterly profits.</div>
-            <div class="project-tags">
-                <span class="tag">#AI</span>
-                <span class="tag">#React</span>
-                <span class="tag">#SSE</span>
-                <span class="tag">#OCC</span>
-            </div>
+          </div>
+          <div class="project-desc">
+            Leading AI content platform. Served as independent developer for
+            first version, generating 10M+ quarterly profits.
+          </div>
+          <div class="project-tags">
+            <span class="tag">#AI</span>
+            <span class="tag">#React</span>
+            <span class="tag">#SSE</span>
+            <span class="tag">#OCC</span>
+          </div>
         </div>
-        
+
         <div class="project-item">
-            <div class="project-header">
-                <div class="project-title">SpeakGuru</div>
-                <div class="project-link">Available on iOS and Android App Stores</div>
+          <div class="project-header">
+            <div class="project-title">SpeakGuru</div>
+            <div class="project-link">
+              Available on iOS and Android App Stores
             </div>
-            <div class="project-desc">Spoken language practice application. Led project development from concept to deployment.</div>
-            <div class="project-tags">
-                <span class="tag">#Flutter</span>
-                <span class="tag">#LanguageLearning</span>
-                <span class="tag">#Mobile</span>
-            </div>
+          </div>
+          <div class="project-desc">
+            Spoken language practice application. Led project development from
+            concept to deployment.
+          </div>
+          <div class="project-tags">
+            <span class="tag">#Flutter</span>
+            <span class="tag">#LanguageLearning</span>
+            <span class="tag">#Mobile</span>
+          </div>
         </div>
-        
+
         <div class="project-item">
-            <div class="project-header">
-                <div class="project-title">Shuangjing Museum</div>
-                <div class="project-link"><a href="https://2m.shuangjing.club">Project Preview</a></div>
+          <div class="project-header">
+            <div class="project-title">Shuangjing Museum</div>
+            <div class="project-link">
+              <a href="https://2m.shuangjing.club">Project Preview</a>
             </div>
-            <div class="project-desc">Metaverse H5 website. Developed 80% of pages and business logic, achieving 100M+ net profit in one month.</div>
-            <div class="project-tags">
-                <span class="tag">#Metaverse</span>
-                <span class="tag">#React</span>
-                <span class="tag">#Three.js</span>
-                <span class="tag">#Node.js</span>
-            </div>
+          </div>
+          <div class="project-desc">
+            Metaverse H5 website. Developed 80% of pages and business logic,
+            achieving 100M+ net profit in one month.
+          </div>
+          <div class="project-tags">
+            <span class="tag">#Metaverse</span>
+            <span class="tag">#React</span>
+            <span class="tag">#Three.js</span>
+            <span class="tag">#Node.js</span>
+          </div>
         </div>
-        
+
         <div class="project-item">
-            <div class="project-header">
-                <div class="project-title">GAIA Project</div>
-                <div class="project-link"><a href="https://gaiamount.com/">Project Preview</a></div>
+          <div class="project-header">
+            <div class="project-title">GAIA Project</div>
+            <div class="project-link">
+              <a href="https://gaiamount.com/">Project Preview</a>
             </div>
-            <div class="project-desc">Bilibili-like adaptive video platform using Vue, jQuery, and Element.</div>
-            <div class="project-tags">
-                <span class="tag">#Vue</span>
-                <span class="tag">#jQuery</span>
-                <span class="tag">#VideoStreaming</span>
-            </div>
+          </div>
+          <div class="project-desc">
+            Bilibili-like adaptive video platform using Vue, jQuery, and
+            Element.
+          </div>
+          <div class="project-tags">
+            <span class="tag">#Vue</span>
+            <span class="tag">#jQuery</span>
+            <span class="tag">#VideoStreaming</span>
+          </div>
         </div>
-        
+
         <div class="project-item">
-            <div class="project-header">
-                <div class="project-title">HaoHaoTingKe App</div>
-                <div class="project-link">Removed due to policy regulations</div>
-            </div>
-            <div class="project-desc">Online education platform for PC and mobile using Electron, React, IM, and Ant Design.</div>
-            <div class="project-tags">
-                <span class="tag">#Electron</span>
-                <span class="tag">#React</span>
-                <span class="tag">#Education</span>
-            </div>
+          <div class="project-header">
+            <div class="project-title">HaoHaoTingKe App</div>
+            <div class="project-link">Removed due to policy regulations</div>
+          </div>
+          <div class="project-desc">
+            Online education platform for PC and mobile using Electron, React,
+            IM, and Ant Design.
+          </div>
+          <div class="project-tags">
+            <span class="tag">#Electron</span>
+            <span class="tag">#React</span>
+            <span class="tag">#Education</span>
+          </div>
         </div>
-        
+
         <div class="project-item">
-            <div class="project-header">
-                <div class="project-title">ShuLian and ShuJiaJia Apps</div>
-                <div class="project-link">Available on iOS and Android App Stores</div>
+          <div class="project-header">
+            <div class="project-title">ShuLian and ShuJiaJia Apps</div>
+            <div class="project-link">
+              Available on iOS and Android App Stores
             </div>
-            <div class="project-desc">Book and teaching resource companion applications using React Native.</div>
-            <div class="project-tags">
-                <span class="tag">#ReactNative</span>
-                <span class="tag">#Education</span>
-                <span class="tag">#Mobile</span>
-            </div>
+          </div>
+          <div class="project-desc">
+            Book and teaching resource companion applications using React
+            Native.
+          </div>
+          <div class="project-tags">
+            <span class="tag">#ReactNative</span>
+            <span class="tag">#Education</span>
+            <span class="tag">#Mobile</span>
+          </div>
         </div>
-    </section>
-    
-    <section class="open-source">
-        <h2>Open Source Projects <span style="font-size: 14px; font-weight: normal;">(over 4 years ago)</span></h2>
+      </section>
+
+      <section class="open-source">
+        <h2>
+          Open Source Projects
+          <span style="font-size: 14px; font-weight: normal"
+            >(over 4 years ago)</span
+          >
+        </h2>
+
         <p>
-            <span class="tag">#OpenSource</span>
-            <span class="tag">#PersonalProjects</span>
+          <a href="https://yinlong22.github.io/muconey-1-website/"
+            ><strong>MUCONEY Accounting</strong></a
+          >
+          <a href="https://github.com/yinlong22/mangosteen-ruby"
+            ><strong>MUCONEY Backend</strong></a
+          >
+          <a href="https://github.com/yinlong22/react-threeDemo"
+            ><strong>Three.js 3D Earth</strong></a
+          >
+          <a
+            href="https://www.shuliantong.cn/webappv2/supplyChainSystem/index.html"
+            ><strong>ERP Website</strong></a
+          >
+          <a href="https://yinlong22.github.io/vue-blog/index#/"
+            ><strong>Multi-user Blog</strong></a
+          >
+          <a href="https://yinlong22.github.io/oneSlide/#/"
+            ><strong>PPT Platform</strong></a
+          >
         </p>
         <p>
-            <a href="https://yinlong22.github.io/muconey-1-website/"><strong>MUCONEY Accounting</strong></a>
-            <a href="https://github.com/yinlong22/mangosteen-ruby"><strong>MUCONEY Backend</strong></a>
-            <a href="https://github.com/yinlong22/react-threeDemo"><strong>Three.js 3D Earth</strong></a>
-            <a href="https://www.shuliantong.cn/webappv2/supplyChainSystem/index.html"><strong>ERP Website</strong></a>
-            <a href="https://yinlong22.github.io/vue-blog/index#/"><strong>Multi-user Blog</strong></a>
-            <a href="https://yinlong22.github.io/oneSlide/#/"><strong>PPT Platform</strong></a>
+          <a href="https://yinlong22.github.io/pikachu2/Pikachu.html"
+            ><strong>Animated Pikachu</strong></a
+          >
+          <a href="https://github.com/yinlong22/dom-fengzhuang"
+            ><strong>DOM Library</strong></a
+          >
+          <a href="https://github.com/yinlong22/node_spider1"
+            ><strong>Web Crawler</strong></a
+          >
+          <a href="https://github.com/yinlong22/node-tasktodo-cli"
+            ><strong>Todo CLI</strong></a
+          >
+          <a href="https://github.com/yinlong22/node-text"
+            ><strong>Node Server</strong></a
+          >
+          <a href="https://yinlong22.github.io/web_nav-2/src/index.html"
+            >Navigation Website</a
+          >
         </p>
         <p>
-            <a href="https://yinlong22.github.io/pikachu2/Pikachu.html"><strong>Animated Pikachu</strong></a>
-            <a href="https://github.com/yinlong22/dom-fengzhuang"><strong>DOM Library</strong></a>
-            <a href="https://github.com/yinlong22/node_spider1"><strong>Web Crawler</strong></a>
-            <a href="https://github.com/yinlong22/node-tasktodo-cli"><strong>Todo CLI</strong></a>
-            <a href="https://github.com/yinlong22/node-text"><strong>Node Server</strong></a>
-            <a href="https://yinlong22.github.io/web_nav-2/src/index.html">Navigation Website</a>
+          Connect:
+          <a href="https://juejin.im/user/5e5e59a6f265da575e37baac/posts"
+            >Blog</a
+          >
+          | <a href="https://github.com/yinlong22">GitHub</a>
         </p>
-        <p>Connect: <a href="https://juejin.im/user/5e5e59a6f265da575e37baac/posts">Blog</a> | <a href="https://github.com/yinlong22">GitHub</a></p>
-    </section>
-    
-    <section class="education">
+      </section>
+
+      <section class="education">
         <h2>Education & Experience</h2>
         <div class="education-item">
-            <div class="education-date">2016 - 2020</div>
-            <div>Tianjin University of Finance and Economics, Zhujiang College - Bachelor's Degree in Data Engineering</div>
+          <div class="education-date">2016 - 2020</div>
+          <div>
+            Tianjin University of Finance and Economics, Zhujiang College -
+            Bachelor's Degree in Data Engineering
+          </div>
         </div>
         <div class="education-item">
-            <div class="education-date">2018 - 2020</div>
-            <div>School AIO Studio - Website Development and Server Maintenance</div>
+          <div class="education-date">2018 - 2020</div>
+          <div>
+            School AIO Studio - Website Development and Server Maintenance
+          </div>
         </div>
         <div class="education-item">
-            <div class="education-date">2020 - 2021</div>
-            <div>Midian Network - Front-end Engineer</div>
+          <div class="education-date">2020 - 2021</div>
+          <div>Midian Network - Front-end Engineer</div>
         </div>
         <div class="education-item">
-            <div class="education-date">2021 - 2022</div>
-            <div>Yunti Technology - App Development Engineer</div>
+          <div class="education-date">2021 - 2022</div>
+          <div>Yunti Technology - App Development Engineer</div>
         </div>
         <div class="education-item">
-            <div class="education-date">2022 - Present</div>
-            <div>Remote Full-stack Engineer</div>
+          <div class="education-date">2022 - Present</div>
+          <div>Remote Full-stack Engineer</div>
         </div>
-    </section>
-</article>
-</body>
+      </section>
+    </article>
+  </body>
 </html>
