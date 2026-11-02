@@ -1,386 +1,263 @@
 <!DOCTYPE html>
-<html lang="zh">
-
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-    <title>史银龙-前端&全栈工程师-本科</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="史银龙的前端与全栈工程师简历，涵盖量化分析平台、企业业务平台、AI 及跨端 App 项目经验。">
+    <title>史银龙 | 前端 / 全栈工程师</title>
     <style>
-        * {
-            box-sizing: border-box;
+        :root {
+            color-scheme: light;
+            --ink: #202b39;
+            --muted: #536171;
+            --accent: #234a68;
+            --line: #d7e0e8;
         }
-
+        * { box-sizing: border-box; }
         body {
-            background: #f5f5f5;
-            margin: 20px 0;
-            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-        }
-
-        article {
-            width: 21cm;
-            min-height: 29.7cm;
-            background: white;
-            margin: 0 auto;
-            overflow: auto;
-            padding: 2em;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-
-        p {
-            margin: .3em 0;
-            line-height: 1.5;
-        }
-
-        h1 {
-            font-size: 28px;
-            margin-top: 0;
-            color: #333;
-        }
-
-        h2 {
-            border-bottom: 1px solid #eee;
-            padding-bottom: 6px;
-            margin-top: 20px;
-            color: #333;
-        }
-
-        h4, h5, h6 {
-            font-weight: normal;
-        }
-
-        ol, ul {
-            list-style: none;
-            padding: 0;
             margin: 0;
+            background: #edf1f5;
+            color: var(--ink);
+            font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+            font-size: 10pt;
+            line-height: 1.45;
+            -webkit-text-size-adjust: 100%;
         }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+        h1, h2, h3, p, ul { margin: 0; }
+        ul { padding: 0; list-style: none; }
+        strong { font-weight: 700; color: var(--ink); }
 
-        strong {
-            font-weight: bold;
-            color: #f60;
-        }
-
-        a {
-            color: #1890ff;
-            text-decoration: none;
-            border-bottom: 1px solid;
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: #40a9ff;
-        }
-
-        p, li {
-            color: #666;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        .bio {
-            position: relative;
-        }
-
-        .bio img {
-            position: absolute;
-            top: 0;
-            right: 0;
-            border-radius: 50%;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-        }
-
-        /* 项目样式 */
-        .jobs ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 15px;
-        }
-
-        .jobs li {
-            background: #fafafa;
-            border-radius: 5px;
-            padding: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s;
-        }
-
-        .jobs li:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .jobs header {
-            display: flex;
-            flex-direction: column;
-            color: #666;
-            margin-bottom: 12px;
-        }
-
-        .jobs header > h3 {
-            font-size: 18px;
-            color: #333;
-            margin: 0 0 5px 0;
-        }
-
-        .jobs header > span {
-            font-size: 14px;
-            margin: 5px 0;
-        }
-
-        /* 技能样式 */
-        .skills .wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-
-        .skills .wrapper > :first-child {
-            margin-right: 24px;
-            flex: 1;
-        }
-
-        #skills {
-            width: 500px;
-            height: 270px;
-        }
-
-        .skills .wrapper ul {
-            color: #666;
-        }
-
-        .skills .wrapper ul li {
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-
-        /* 其他链接样式 */
-        .others ul li {
-            line-height: 1.8;
-        }
-
-        .others a {
-            margin-right: 10px;
-            display: inline-block;
-        }
-
-        /* 教育经历样式 */
-        .education p {
-            margin: 10px 0;
+        .toolbar {
+            width: min(210mm, 100%);
+            margin: 18px auto 10px;
+            padding: 0 4px;
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            color: var(--muted);
+            font-size: 12px;
         }
-
-        .education span {
-            min-width: 180px;
-            color: #888;
+        .print-button {
+            padding: 8px 16px;
+            border: 0;
+            border-radius: 5px;
+            background: var(--accent);
+            color: white;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
         }
-
-        .education time {
-            font-style: normal;
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto 28px;
+            padding: 10mm 13mm;
+            background: white;
+            box-shadow: 0 8px 32px #24374b14;
         }
+        .bio {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 24mm;
+            gap: 7mm;
+            align-items: center;
+            padding-bottom: 3mm;
+            border-bottom: 2px solid var(--accent);
+        }
+        h1 { font-size: 26pt; line-height: 1.2; letter-spacing: 2px; }
+        .job-title { margin: 4px 0; font-size: 13pt; font-weight: 700; color: var(--accent); }
+        .profile-meta, .contact, .profile-links { font-size: 9pt; line-height: 1.65; }
+        .profile-meta { color: var(--muted); }
+        .contact, .profile-links { display: flex; flex-wrap: wrap; column-gap: 14px; }
+        .portrait { width: 24mm; height: 27mm; object-fit: cover; object-position: center; border-radius: 3px; }
 
-        /* 响应式设计 */
-        @media (max-width: 500px) {
-            body {
-                margin: 0;
-            }
+        section { margin-top: 2.6mm; }
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1.2mm;
+            color: var(--accent);
+            font-size: 11.5pt;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        h2::after { content: ""; height: 1px; flex: 1; background: var(--line); }
+        .summary li + li { margin-top: 2px; }
+        .skill-row { display: grid; grid-template-columns: 28mm minmax(0, 1fr); gap: 8px; }
+        .skill-row + .skill-row { margin-top: 1px; }
+        .skill-label { color: var(--muted); font-weight: 700; }
+        .career-row, .education-row { display: grid; grid-template-columns: 35mm minmax(0, 1fr); gap: 10px; }
+        .career-row + .career-row { margin-top: 1px; }
+        .date { color: var(--muted); font-size: 9pt; font-variant-numeric: tabular-nums; white-space: nowrap; }
+        .career-note { color: var(--muted); }
 
-            article {
-                width: 100%;
-                height: auto;
-                padding: 1em;
-                box-shadow: none;
-                border-radius: 0;
-            }
+        .project { break-inside: avoid; page-break-inside: avoid; }
+        .project + .project { margin-top: 2mm; }
+        .project-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+        h3 { font-size: 10.5pt; line-height: 1.5; font-weight: 700; }
+        .project-link { flex-shrink: 0; font-size: 8.5pt; }
+        .project-meta { margin: 1px 0; color: var(--muted); font-size: 8.5pt; }
+        .project p { line-height: 1.45; }
 
-            .bio img {
-                display: none;
-            }
+        .portfolio { display: flex; flex-wrap: wrap; column-gap: 14px; row-gap: 3px; font-size: 8.5pt; }
+        .portfolio-label { font-weight: 700; color: var(--muted); }
+        .footer { margin-top: 2.6mm; padding-top: 2mm; border-top: 1px solid var(--line); }
 
-            .skills .wrapper {
-                flex-direction: column;
-            }
-
-            #skills {
-                width: 100%;
-                height: 250px;
-            }
-
-            .jobs ul {
-                grid-template-columns: 1fr;
-            }
-
-            .education p {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .education span {
-                margin-bottom: 5px;
-            }
+        @page { size: A4 portrait; margin: 10mm 13mm; }
+        @media print {
+            body { background: white; }
+            .toolbar { display: none; }
+            .resume { width: auto; min-height: 0; margin: 0; padding: 0; box-shadow: none; }
+            a { color: var(--ink); }
+            h2 { break-after: avoid; page-break-after: avoid; }
+            .bio, .skill-row, .career-row, .education-row, .footer { break-inside: avoid; }
+        }
+        @media screen and (max-width: 820px) {
+            .toolbar { padding: 0 16px; }
+            .resume { width: 100%; min-height: 0; padding: 28px; margin-bottom: 0; box-shadow: none; }
+        }
+        @media screen and (max-width: 520px) {
+            body { font-size: 14px; }
+            .toolbar { margin: 12px 0; font-size: 11px; }
+            .resume { padding: 22px 18px; }
+            .bio { grid-template-columns: minmax(0, 1fr) 68px; gap: 12px; padding-bottom: 16px; }
+            h1 { font-size: 29px; }
+            .job-title { font-size: 15px; }
+            .portrait { width: 68px; height: 82px; }
+            .profile-meta, .contact, .profile-links { font-size: 12px; }
+            .contact, .profile-links { column-gap: 10px; }
+            section { margin-top: 18px; }
+            h2 { margin-bottom: 8px; font-size: 16px; }
+            h3 { font-size: 14px; }
+            .skill-row { grid-template-columns: 1fr; gap: 1px; }
+            .skill-row + .skill-row { margin-top: 7px; }
+            .career-row, .education-row { grid-template-columns: 1fr; gap: 1px; }
+            .career-row + .career-row { margin-top: 8px; }
+            .project + .project { margin-top: 14px; }
+            .project-header { flex-wrap: wrap; column-gap: 8px; row-gap: 0; }
+            .project-meta, .project-link { font-size: 12px; overflow-wrap: anywhere; }
+            .footer { margin-top: 18px; padding-top: 12px; }
         }
     </style>
 </head>
-
 <body>
-<article>
-    <section class="bio">
-        <h1>史银龙</h1>
-        <img src="images/img.png" alt="" width="110px">
-        <p>
-            男 | 30岁 | 前端&全栈开发工程师 | 成都
-        </p>
-        <p>
-            手机：<a href="tel:17695473336">17695473336</a> &nbsp;| 邮箱：<a
-                href="mailto:342241857@qq.com">342241857@qq.com</a>
-        </p>
-    </section>
-    
-    <section class="skills">
-        <h2>简介</h2>
-        <div class="wrapper">
-            <ul>
-                <li>
-                    座右铭：<strong>没有困难的需求，只有更好的用户体验</strong>。
-                </li>
-                <li>
-                    您好，我是史银龙，一位从小学习编程的技术同学。当你和我一起工作时，你是在和一位有
-                    <strong>7年工作经验且开发项目超过100个</strong>
-                    的专业大前端人士一起工作。在我的职业生涯中，我项目种类和数量接触比较多，技术栈丰富，项目匹配性较强，
-                    <strong>常常会在团队中做调整整体技术框架和处理比较复杂困难的需求</strong>
-                    ：手写excel、聊天及弹幕、手写occ等。已助力多家企业：
-                    <strong>双镜、jasper等，净利均润超千万</strong>。我在这里为您提供您想要的各端web、app产品体验和技术解决方案。
-                </li>
-                <li>
-                    熟练掌握：<strong>vue、react、flutter、react native、electron、threejs、koa</strong>等。
-                    <strong>技术栈较丰富，项目匹配性强</strong>，从电商到现在的web3/gpt等行业均有商业项目。
-                </li>
-                <li>
-                    <strong>管理过团队</strong>，对项目迭代、需求推进、小伙伴任务分配和疏导有一定的经验。
-                </li>
-                <li>
-                    <strong>在
-                        <a href="https://www.yuanling.com/renwu/detail?id=30356486556809216&spm=1.2.47.29&scm=">圆领</a>
-                        研发区销量第一，好评100%，单平台年均220k+</strong>
-                </li>
-            </ul>
+<div class="toolbar">
+    <span>A4 单页简历 · 打印时关闭页眉和页脚</span>
+    <button class="print-button" type="button" data-print>打印 / 保存 PDF</button>
+</div>
+<article class="resume" aria-label="史银龙的个人简历">
+    <header class="bio">
+        <div>
+            <h1>史银龙</h1>
+            <p class="job-title">前端 / 全栈工程师</p>
+            <p class="profile-meta">7 年开发经验 · 成都 · 本科</p>
+            <div class="contact">
+                <a href="tel:17695473336">17695473336</a>
+                <a href="mailto:342241857@qq.com">342241857@qq.com</a>
+            </div>
+            <div class="profile-links">
+                <a href="https://github.com/yinlong22">GitHub / yinlong22</a>
+                <a href="https://juejin.im/user/5e5e59a6f265da575e37baac/posts">技术博客</a>
+                <a href="https://www.yuanling.com/renwu/detail?id=30356486556809216&spm=1.2.47.29&scm=">圆领主页</a>
+            </div>
         </div>
+        <img class="portrait" src="images/img.png" alt="史银龙的证件照" width="91" height="102">
+    </header>
+
+    <section aria-labelledby="summary-title">
+        <h2 id="summary-title">个人优势</h2>
+        <ul class="summary">
+            <li>累计参与 <strong>100+ 项目</strong>，覆盖企业业务平台、AI、在线教育、Web3 与个人量化项目，具备 Web、移动 App、小程序及桌面端开发经验。</li>
+            <li>具备<strong>项目负责与团队管理经验</strong>，承担技术框架调整、复杂需求实现、任务分配与迭代推进。</li>
+        </ul>
     </section>
-    
-    <section class="jobs">
-        <h2>主要项目经历</h2>
+
+    <section aria-labelledby="skills-title">
+        <h2 id="skills-title">技术能力</h2>
+        <div class="skill-row"><span class="skill-label">Web / 工程化</span><span>React、Vue、TypeScript、Vite、Umi、Ant Design</span></div>
+        <div class="skill-row"><span class="skill-label">服务端 / 数据</span><span>Node.js、Express、Koa、PostgreSQL、SSE、即时通信</span></div>
+        <div class="skill-row"><span class="skill-label">跨端 / 可视化</span><span>Flutter、React Native、Electron、Three.js、类 Excel 交互</span></div>
+    </section>
+
+    <section aria-labelledby="career-title">
+        <h2 id="career-title">工作经历</h2>
+        <div class="career-row"><span class="date">2022.06 - 至今</span><p><strong>远程全栈工程师</strong><span class="career-note"> · 已承接 80+ 项目</span></p></div>
+        <div class="career-row"><span class="date">2021.03 - 2022.6</span><p><strong>云梯科技</strong> · App 开发工程师</p></div>
+        <div class="career-row"><span class="date">2020.05 - 2021.03</span><p><strong>米点网络</strong> · 前端工程师</p></div>
+        <div class="career-row"><span class="date">2018.10 - 2020.03</span><p><strong>学校艾欧工作室</strong> · 网站开发与服务器运维</p></div>
+    </section>
+
+    <section aria-labelledby="projects-title">
+        <h2 id="projects-title">代表项目</h2>
         <ul>
-            <li>
-                <header>
-                    <h3>Jesper</h3>
-                    <span style="color: olive">头部ai国际网站项目：使用react、sse、occ</span>
-                    <span>担任项目第一版得独立开发，季度盈利超千万</span>
-                    <span>
-                        <a href="https://www.jasper.ai/free-trial?_from=ads&fp_sid=1-g-CjwKCAiA-bmsBhAGEiwAoaQNmq6czkkF8w_KdHov1LC5uCMw2qLN2QASGc5jLRbiyi-B1WX0mQNiQhoCN_IQAvD_BwE&gad_source=1">项目预览</a>
-                    </span>
-                </header>
+            <li class="project">
+                <div class="project-header">
+                    <h3>FinScope · 个人量化分析平台</h3>
+                    <a class="project-link" href="https://finscope-frontend.onrender.com/m">项目预览</a>
+                </div>
+                <p class="project-meta">个人全栈项目 · React / TypeScript / Vite / Node.js / Express / PostgreSQL</p>
+                <p>整合行情与财经资讯，实现<strong>自动量化交易、实时行情、策略信号、持仓盈亏、风险预算</strong>及 PC / 移动端展示。</p>
+                <p>开展加密策略研究与回测验证，完善行情数据校验与异常诊断。</p>
             </li>
-            <li>
-                <header>
-                    <h3>SpeakGuru</h3>
-                    <span style="color: olive">口语练习app项目：使用flutter</span>
-                    <span>担任项目负责人及主要开发</span>
-                    <span>
-                        <a href="https://speakguru.huoideas.com/#/">项目预览</a> (iOS/安卓应用商店可下载)
-                    </span>
-                </header>
+            <li class="project">
+                <div class="project-header">
+                    <h3>上海猫投鹰投教</h3>
+                    <a class="project-link" href="https://www.rz-mtygs.cn/" aria-label="上海猫投鹰 PC 项目预览">PC 预览 · rz-mtygs.cn</a>
+                </div>
+                <p class="project-meta">PC 端 / 小程序 / 管理后台 · 小程序：荣正猫投鹰</p>
+                <p>参与多端业务开发与迭代，基于现有后台的 SaaS 项目建设，推进上述业务模块的需求梳理与适配规划。</p>
             </li>
-            <li>
-                <header>
-                    <h3>双镜博物</h3>
-                    <span style="color: olive">元宇宙h5网站：使用react、umi、threejs、ant-mobile、nodejs、anyweb</span>
-                    <span>担任项目主要开发工程师、搭建以及80%以上的页面和业务开发，曾一月获净利润上亿</span>
-                    <span>
-                        <a href="https://2m.shuangjing.club">项目预览</a>
-                    </span>
-                </header>
+            <li class="project">
+                <div class="project-header">
+                    <h3>Jasper · AI 网站</h3>
+                    <a class="project-link" href="https://www.jasper.ai/">项目预览</a>
+                </div>
+                <p class="project-meta">React / SSE</p>
+                <p><strong>独立承担项目第一版开发</strong>，基于 React、SSE 实现 AI 网站业务功能。</p>
             </li>
-            <li>
-                <header>
-                    <h3>GAIA项目</h3>
-                    <span style="color: olive">类似b站的自适应视频网站： 使用vue、jq、element</span>
-                    <span>
-                       <a href="https://gaiamount.com/">项目预览</a>
-                    </span>
-                </header>
+            <li class="project">
+                <div class="project-header">
+                    <h3>双镜博物 · 元宇宙 H5</h3>
+                    <a class="project-link" href="https://2m.shuangjing.club">项目预览</a>
+                </div>
+                <p class="project-meta">React / Umi / Three.js / Ant Design Mobile / Node.js / AnyWeb</p>
+                <p>担任主要开发工程师，负责项目搭建及 <strong>80% 以上的页面与业务开发</strong>。</p>
             </li>
-            <li>
-                <header>
-                    <h3>好好听课app</h3>
-                    <span style="color: olive">在线教育pc和移动端app：使用electron、react、im和ant</span>
-                    <span>因政策原因已下架</span>
-                </header>
+            <li class="project">
+                <div class="project-header">
+                    <h3>SpeakGuru · 口语练习 App</h3>
+                    <a class="project-link" href="https://speakguru.huoideas.com/#/">项目预览</a>
+                </div>
+                <p class="project-meta">Flutter · iOS / Android</p>
+                <p>担任<strong>项目负责人及主要开发</strong>，使用 Flutter 开发跨平台口语练习 App。</p>
             </li>
-            <li>
-                <header>
-                    <h3>书链及书加加app</h3>
-                    <span style="color: olive">图书和教学资源配套的app：使用react native</span>
-                    <span>ios或安卓市场搜索名字即可</span>
-                </header>
+            <li class="project">
+                <div class="project-header"><h3>好好听课、书链及书加加 App</h3></div>
+                <p class="project-meta">Electron / React / IM / Ant Design / React Native</p>
+                <p>参与在线教育与图书配套教学资源产品开发；好好听课覆盖 PC 与移动端，书链及书加加使用 React Native 开发，覆盖 iOS 与 Android。</p>
             </li>
         </ul>
     </section>
-    
-    <section class="others">
-        <h2>其他链接(均为4年前的项目)</h2>
-        <ul>
-            <li>部分开源项目:
-                <a href="https://yinlong22.github.io/muconey-1-website/"><strong>MUCONEY记账</strong></a>、
-                <a href="https://github.com/yinlong22/mangosteen-ruby"><strong>MUCONEY记账后端</strong></a>、
-                <a href="https://github.com/yinlong22/react-threeDemo"><strong>threejs-3d地球</strong></a>、
-                <a href="https://www.shuliantong.cn/webappv2/supplyChainSystem/index.html"><strong>erp网站项目</strong></a>、
-                <a href="https://yinlong22.github.io/vue-blog/index#/"><strong>多人博客</strong></a>、
-                <a href="https://yinlong22.github.io/oneSlide/#/"><strong>制作ppt和展示的网站</strong></a>、
-                <a href="https://yinlong22.github.io/pikachu2/Pikachu.html"><strong>会动的皮卡丘</strong></a>、
-                <a href="https://github.com/yinlong22/dom-fengzhuang"><strong>封装DOM 库</strong></a>、
-                <a href="https://github.com/yinlong22/node_spider1"><strong>node-acFun爬虫</strong></a>、
-                <a href="https://github.com/yinlong22/node-tasktodo-cli"><strong>todoCli app</strong></a>、
-                <a href="https://github.com/yinlong22/node-text"><strong>node服务端代码</strong></a>、
-                <a href="https://yinlong22.github.io/web_nav-2/src/index.html">前端导航网站</a>、
-                <a href="https://github.com/yinlong22/tomato_mini_program">番茄任务闹钟小程序</a>、
-                ...
-            </li>
-            <li>
-                <a href="https://juejin.im/user/5e5e59a6f265da575e37baac/posts">我的博客</a>
-                <a href="https://github.com/yinlong22">我的 GitHub</a>
-            </li>
-        </ul>
+
+    <section aria-labelledby="education-title">
+        <h2 id="education-title">教育背景</h2>
+        <div class="education-row"><span class="date">2016 - 2020</span><p><strong>天津财经大学珠江学院</strong> · 数据工程学院 · 本科</p></div>
     </section>
-    
-    <section class="education">
-        <h2>教育经历及工作经历</h2>
-        <p>
-            <span><time>2016年</time>~<time>2020年</time></span>
-            天津财经大学珠江学院 数据工程学院 本科
-        </p>
-        <p>
-            <span><time>2018年10月</time>~<time>2020年3月</time></span>
-            学校艾欧工作室 网站开发和服务器运维
-        </p>
-        <p>
-            <span><time>2020年5月</time>~<time>2021年3月</time></span>
-            米点网络 开发部门 前端工程师 （受疫情影响转型硬件方向）
-        </p>
-        <p>
-            <span><time>2021年3月</time>~<time>2021年12月</time></span>
-            云梯科技 开发部门 app开发工程师 （受k12教育双减影响）
-        </p>
-        <p>
-            <span><time>2022年1月</time>~<time>至今</time></span>
-            远程全栈工程师（已经接手超过50+项目）
-        </p>
-    </section>
+
+    <footer class="footer">
+        <div class="portfolio">
+            <span class="portfolio-label">更多作品</span>
+            <a href="https://gaiamount.com/">GAIA 视频网站 · Vue / jQuery / Element UI</a>
+            <a href="https://yinlong22.github.io/muconey-1-website/">MUCONEY 记账</a>
+            <a href="https://github.com/yinlong22/mangosteen-ruby">Ruby 记账后端</a>
+            <a href="https://github.com/yinlong22/react-threeDemo">Three.js 3D 地球</a>
+        </div>
+    </footer>
 </article>
-<script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.9.0/echarts.min.js"></script>
 <script src="./main.js"></script>
 </body>
 </html>
-
